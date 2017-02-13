@@ -27,7 +27,7 @@ module APIHelper
 	$github_url =
 	$auth = 
 	$cache_opt = 'no-cache'
-	$org = 'yammer'
+	$org = ''
 
 	#PUT request to add admin team w/ admin privileges
 	def self.add_gherepoadmin(repository)
