@@ -37,7 +37,7 @@ module APIHelper
 
 		http = Net::HTTP.new(url.host, url.port)
 		http.use_ssl = true
-		http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+		http.verify_mode = OpenSSL::SSL::VERIFY_PEER
 
 		add_team = Net::HTTP::Put.new(url)
 		add_team["authorization"] = $auth
@@ -57,7 +57,7 @@ module APIHelper
 
 		http = Net::HTTP.new(url.host, url.port)
 		http.use_ssl = true
-		http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+		http.verify_mode = OpenSSL::SSL::VERIFY_PEER
 
 		add_team = Net::HTTP::Put.new(url)
 		add_team["authorization"] = $auth
